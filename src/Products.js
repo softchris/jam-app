@@ -3,7 +3,6 @@ import React from 'react';
 import './products.css';
 
 async function getProducts() {
-  try {
     // const res = await fetch('/api/Products')
     // console.log(res.status)
     // console.log(res.statusText)
@@ -13,9 +12,6 @@ async function getProducts() {
       id: 1,
       name: 'Product'
     }]
-  } catch (err) {
-    throw err.message;
-  }
 }
 
 class Products extends React.Component {
