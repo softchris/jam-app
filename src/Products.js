@@ -8,10 +8,14 @@ async function getProducts() {
     // console.log(res.statusText)
     // const products = await res.json()
     // return products
-    return [{
-      id: 1,
-      name: 'Product'
-    }]
+    return new Promise((resolve) => {
+      resolve([
+        {
+          id: 1,
+          name: "Product",
+        },
+      ]);
+    })
 }
 
 class Products extends React.Component {
