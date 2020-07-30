@@ -4,11 +4,15 @@ import './products.css';
 
 async function getProducts() {
   try {
-    const res = await fetch('/api/Products')
-    console.log(res.status)
-    console.log(res.statusText)
-    const products = await res.json()
-    return products
+    // const res = await fetch('/api/Products')
+    // console.log(res.status)
+    // console.log(res.statusText)
+    // const products = await res.json()
+    // return products
+    return [{
+      id: 1,
+      name: 'Product'
+    }]
   } catch (err) {
     throw err.message;
   }
